@@ -1,6 +1,6 @@
 """
 Run locally:
-    streamlit run intent_classifier_ui.py
+    streamlit run biencoder-intent-ranking-streamlit.py
 
 Install:
     pip install -r requirements.txt
