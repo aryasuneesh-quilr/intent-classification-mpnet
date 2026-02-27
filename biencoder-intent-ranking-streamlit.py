@@ -619,22 +619,14 @@ with st.sidebar:
     )
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  APP HEADER
-# ─────────────────────────────────────────────────────────────────────────────
-
 st.markdown("""
 <div class="app-header">
     <span class="app-title">INTENT CLASSIFIER</span>
-    <span class="app-subtitle">Stage 1 · MPNet bi-encoder · threshold-based routing</span>
 </div>
 """, unsafe_allow_html=True)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  UPLOAD GATE — friendly landing screen shown until a CSV is uploaded
-# ─────────────────────────────────────────────────────────────────────────────
-
+# Upload gate
 if uploaded_file is None:
     st.markdown("""
     <div class="upload-prompt">
@@ -660,9 +652,6 @@ if uploaded_file is None:
     st.stop()
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-#  DATA PIPELINE — runs once per unique (file_content × encoder_mode)
-# ─────────────────────────────────────────────────────────────────────────────
 
 # Read bytes once. All downstream operations use this in-memory buffer.
 file_bytes = uploaded_file.read()
