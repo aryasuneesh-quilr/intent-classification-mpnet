@@ -1,5 +1,5 @@
 # ─────────────────────────────────────────────────────────────────────────────
-#  stage1_biencoder_classifier.py
+#  biencoder-intent-ranking.py
 #
 #  Stage 1 — Standalone bi-encoder intent classifier.
 #
