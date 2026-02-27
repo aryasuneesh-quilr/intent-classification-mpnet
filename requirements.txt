@@ -1,0 +1,6 @@
+streamlit>=1.54.0
+sentence-transformers>=5.2.2
+torch
+pandas>=2.3.3
+huggingface_hub
+python-dotenv
